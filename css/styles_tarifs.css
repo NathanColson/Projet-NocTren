@@ -1,0 +1,143 @@
+/* Reset de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 2;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* En-tête */
+header {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff6b6b;
+}
+
+.cta-button .btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #1a1a1a; /* Fond noir */
+  color: white; /* Texte blanc */
+  border: 2px solid white; /* Contour blanc */
+  text-decoration: none;
+  border-radius: 5px; /* Légèrement arrondi */
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.3s ease; /* Transition douce */
+}
+
+.cta-button .btn:hover {
+  background-color: #ff4c4c;
+}
+
+/* Section des tarifs */
+.tarifs {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #fff;
+}
+
+.tarifs h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #1e293b;
+}
+
+.tarif-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+/* Style des cartes */
+.tarif-card {
+  background: #f1f5f9;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarif-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.tarif-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #334155;
+}
+
+.tarif-card p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #475569;
+}
+
+/* Bouton souscrire */
+.tarif-card .btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: #00d4ff;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.tarif-card .btn:hover {
+  background: #009ecf;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background-color: #1e293b;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}

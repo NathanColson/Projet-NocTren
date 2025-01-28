@@ -1,0 +1,214 @@
+/* Reset de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 2;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* En-tête */
+header {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff6b6b;
+}
+
+.cta-button .btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #1a1a1a; /* Fond noir */
+  color: white; /* Texte blanc */
+  border: 2px solid white; /* Contour blanc */
+  text-decoration: none;
+  border-radius: 5px; /* Légèrement arrondi */
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.3s ease; /* Transition douce */
+}
+
+.cta-button .btn:hover {
+  background-color: #ff4c4c;
+}
+/* Main */
+
+main {
+  margin-top: 80px;
+  padding: 2rem 5%;
+}
+
+.programme-details {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+h1 {
+  color: #2c3e50;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.details-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Premier paragraphe */
+.details-text > p:first-of-type {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+/* Container pour l'image et la liste */
+.liste-apprendre {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+  margin: 2rem 0;
+}
+
+.programme-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  order: 1; /* Place l'image à gauche */
+}
+
+.liste-apprendre h2 {
+  grid-column: 2; /* Place le titre au-dessus de la liste */
+  margin-bottom: 1rem;
+}
+
+.liste-apprendre ul {
+  grid-column: 2; /* Place la liste à droite */
+}
+
+/* Dernier paragraphe */
+.details-text > p:last-of-type {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-top: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  padding: 12px 20px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #f39c12;
+  color: #000;
+  border-color: #000;
+}
+/* Pied de page */
+footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #ff6b6b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Cache les liens en mode mobile */
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .programme-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .programme-card {
+    width: 100%;
+  }
+}
