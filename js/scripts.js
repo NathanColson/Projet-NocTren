@@ -42,8 +42,11 @@ if (contactForm) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Redirection pour le bouton "S'abonner"
-  const subscribeButton = document.querySelector(".cta-button .btn");
+  // Redirection pour le bouton "S'abonner" dans le header
+  const subscribeButton = document.querySelector(".cta-buttons .btn-subscribe");
+  const loginButton = document.querySelector(".cta-buttons .btn-login");
+
+  // Redirection pour les boutons "S'abonner" dans les cartes
   const subscribeButtonDebutant = document.querySelector(
     ".programme-card-debutant .btn"
   );
@@ -51,27 +54,39 @@ document.addEventListener("DOMContentLoaded", () => {
     ".programme-card-avance .btn"
   );
 
+  // Gestion du bouton "S'abonner" dans le header
   if (subscribeButton) {
-    console.log("Bouton trouvé !");
+    console.log("Bouton 'S'abonner' trouvé !");
     subscribeButton.addEventListener("click", (event) => {
       event.preventDefault(); // Empêche l'action par défaut du lien
       window.location.href = "tarifs.html"; // Redirige vers la page des tarifs
     });
   }
 
-  if (subscribeButtonDebutant) {
-    console.log("Bouton trouvé !");
-    subscribeButtonDebutant.addEventListener("click", (event) => {
+  // Gestion du bouton "S'identifier" dans le header
+  if (loginButton) {
+    console.log("Bouton 'S'identifier' trouvé !");
+    loginButton.addEventListener("click", (event) => {
       event.preventDefault(); // Empêche l'action par défaut du lien
-      window.location.href = "debutant.html"; // Redirige vers la page des tarifs
+      window.location.href = "login.html"; // Redirige vers la page de connexion
     });
   }
 
+  // Gestion du bouton "S'abonner" dans la carte Débutant
+  if (subscribeButtonDebutant) {
+    console.log("Bouton 'S'abonner' (Débutant) trouvé !");
+    subscribeButtonDebutant.addEventListener("click", (event) => {
+      event.preventDefault(); // Empêche l'action par défaut du lien
+      window.location.href = "debutant.html"; // Redirige vers la page Débutant
+    });
+  }
+
+  // Gestion du bouton "S'abonner" dans la carte Avancé
   if (subscribeButtonAvance) {
-    console.log("Bouton trouvé !");
+    console.log("Bouton 'S'abonner' (Avancé) trouvé !");
     subscribeButtonAvance.addEventListener("click", (event) => {
       event.preventDefault(); // Empêche l'action par défaut du lien
-      window.location.href = "avance.html"; // Redirige vers la page des tarifs
+      window.location.href = "avance.html"; // Redirige vers la page Avancé
     });
   }
 });

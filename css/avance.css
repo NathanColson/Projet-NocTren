@@ -23,7 +23,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1500px;
+  max-width: 1750px;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -38,7 +38,8 @@ nav {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  align-items: center;
+  gap: 3rem;
 }
 
 .nav-links a {
@@ -49,12 +50,19 @@ nav {
 }
 
 .nav-links a:hover {
-  color: #ff6b6b;
+  color: #b0b0b0;
+}
+.nav-logo {
+  height: 100px; /* Ajuste la taille du logo */
+}
+.cta-buttons {
+  display: flex;
+  gap: 3rem; /* Espace entre les boutons */
 }
 
-.cta-button .btn {
+.cta-buttons .btn {
   display: inline-block;
-  padding: 0.75rem 1.5rem;
+  padding: 0.8rem 1.5rem; /* Taille moyenne pour les boutons */
   background-color: #1a1a1a; /* Fond noir */
   color: white; /* Texte blanc */
   border: 2px solid white; /* Contour blanc */
@@ -66,9 +74,28 @@ nav {
   transition: all 0.3s ease; /* Transition douce */
 }
 
-.cta-button .btn:hover {
-  background-color: #ff4c4c;
+.cta-buttons .btn:hover {
+  background-color: #f39c12;
 }
+
+/* Style spécifique pour le bouton "S'identifier" */
+.btn-login {
+  background-color: #333; /* Couleur différente pour le bouton login */
+}
+
+.btn-login:hover {
+  background-color: #555; /* Couleur au survol */
+}
+
+/* Style spécifique pour le bouton "S'abonner" */
+.btn-subscribe {
+  background-color: #f39c12; /* Couleur différente pour le bouton abonnement */
+}
+
+.btn-subscribe:hover {
+  background-color: #e67e22; /* Couleur au survol */
+}
+
 
 /* Section Programme Avancé */
 .programme-details {
@@ -81,7 +108,7 @@ nav {
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 2rem;
-  color: #ff6b6b;
+  color: #fff;
 }
 
 .intro,
@@ -112,7 +139,7 @@ nav {
 .details-text h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  color: #ff6b6b;
+  color: #fff;
 }
 
 .details-text ul {
@@ -152,6 +179,7 @@ nav {
   font-weight: bold;
   transition: all 0.3s ease;
   text-align: center;
+  float: right;
 }
 
 .programme-details .btn:hover {

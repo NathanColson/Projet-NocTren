@@ -10,6 +10,7 @@
     />
     <link rel="stylesheet" href="css/styles.css" />
     <script src="js/scripts.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/moon_logo_RETOUCHER.jpg">
   </head>
   <body>
     <!-- En-tête -->
@@ -21,11 +22,15 @@
         <ul class="nav-links">
           <li><a href="#accueil">Accueil</a></li>
           <li><a href="#programmes">Programmes</a></li>
+          <li class="logo-center">
+            <img src="images/moon_logo_detourer_clair.jpg" alt="Logo Noctren" class="nav-logo">
+          </li>
           <li><a href="#a-propos">À Propos</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#influence">Influence</a></li>
         </ul>
-        <div class="cta-button">
-          <a href="#abonnement" class="btn">S'abonner</a>
+        <div class="cta-buttons">
+          <a href="#abonnement" class="btn btn-subscribe">S'abonner</a>
+          <a href="#login" class="btn btn-login">Login</a>
         </div>
       </nav>
     </header>
@@ -52,37 +57,114 @@
           <a href="#" class="btn">En savoir plus</a>
         </div>
         <div class="programme-card-avance">
-          <h3>Programme Avancé</h3>
+          <h3>Programme <br>Avancé</h3>
           <p>Pour ceux qui veulent repousser leurs limites.</p>
           <a href="#" class="btn">En savoir plus</a>
         </div>
     </section>
 
     <!-- Section À Propos -->
-    <section id="a-propos" class="a-propos">
-      <h2>À Propos de Nous</h2>
+<section id="a-propos" class="a-propos">
+  <h2>À Propos de Nous</h2>
+  <div class="a-propos-content">
+    <!-- Informations Générales -->
+    <div class="info">
+      <h3>Qui Sommes-Nous ?</h3>
       <p>
-        Nous sommes une communauté dédiée à la transformation physique et
-        mentale.
+        NOCTREN Coaching a été créé en <strong>2023</strong> avec une mission
+        simple : aider les gens à transformer leur corps et leur esprit grâce à
+        des programmes de musculation et de motivation adaptés à tous les
+        niveaux.
       </p>
-    </section>
+      <p>
+        Aujourd'hui, nous sommes fiers de compter plus de
+        <strong>100 000 abonnés</strong> sur TikTok et une communauté de
+        <strong>5 000 membres actifs</strong> sur Discord.
+      </p>
+    </div>
 
-    <!-- Section Contact -->
-    <section id="contact" class="contact">
-      <h2>Contactez-nous</h2>
-      <form action="#" method="post">
-        <label for="name">Nom :</label>
-        <input type="text" id="name" name="name" required />
+    <!-- Invitation Discord -->
+    <div class="discord-invite">
+      <h3>Rejoins Notre Communauté Discord</h3>
+      <p>
+        Viens discuter, partager tes progrès et obtenir des conseils exclusifs
+        dans notre serveur Discord.
+      </p>
+      <a href="https://discord.gg/nbq9tYreR9" target="_blank" class="btn">
+        <img src="images/discord-white-icon.jpg" alt="Discord Icon" />
+        Rejoindre Discord
+      </a>
+    </div>
+</section>
 
-        <label for="email">Email :</label>
-        <input type="email" id="email" name="email" required />
+    <!-- Section Influence -->
+<section id="influence" class="influence">
+  <h2>Notre Influence</h2>
+  <div class="influence-content">
+    <!-- Statistiques TikTok -->
+    <div class="stats">
+      <h3>Statistiques TikTok</h3>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span class="stat-number">140K</span>
+          <span class="stat-label">Abonnés</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">10M+</span>
+          <span class="stat-label">Vues</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">100+</span>
+          <span class="stat-label">Vidéos</span>
+        </div>
+      </div>
+    </div>
 
-        <label for="message">Message :</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+    <!-- Dernières Vidéos -->
+    <div class="latest-videos">
+      <h3>Dernières Vidéos</h3>
+      <div class="video-grid">
+        <!-- Vidéo 1 -->
+        <div class="video-item">
+          <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@noctren7/video/7459845772771593494" data-video-id="7459845772771593494" style="max-width: 605px; min-width: 325px;">
+            <section>
+              <a target="_blank" title="@noctren7" href="https://www.tiktok.com/@noctren7?refer=embed">@noctren7</a>
+              Stay hard.———- 270+ clips🔗 in bio. ———-
+              <a title="motivation" target="_blank" href="https://www.tiktok.com/tag/motivation?refer=embed">#motivation</a>
+              <a title="discipline" target="_blank" href="https://www.tiktok.com/tag/discipline?refer=embed">#discipline</a>
+              <a title="fypシ゚" target="_blank" href="https://www.tiktok.com/tag/fyp%E3%82%B7%E3%82%9A?refer=embed">#fypシ゚</a>
+              <a target="_blank" title="♬ son original - NOCTREN" href="https://www.tiktok.com/music/son-original-7459845778379377430?refer=embed">♬ son original - NOCTREN</a>
+            </section>
+          </blockquote>
+        </div>
 
-        <button type="submit" class="btn">Envoyer</button>
-      </form>
-    </section>
+        <!-- Vidéo 2 -->
+      <div class="video-item">
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@noctren7/video/7462480153000594710" data-video-id="7462480153000594710" style="max-width: 605px; min-width: 325px;">
+          <section>
+            <a target="_blank" title="@noctren7" href="https://www.tiktok.com/@noctren7?refer=embed">@noctren7</a>
+            Focus on you.———- 270+ clips🔗 in bio. ———-
+            <a title="motivation" target="_blank" href="https://www.tiktok.com/tag/motivation?refer=embed">#motivation</a>
+            <a title="discipline" target="_blank" href="https://www.tiktok.com/tag/discipline?refer=embed">#discipline</a>
+            <a title="fypシ゚" target="_blank" href="https://www.tiktok.com/tag/fyp%E3%82%B7%E3%82%9A?refer=embed">#fypシ゚</a>
+            <a target="_blank" title="♬ son original - NOCTREN" href="https://www.tiktok.com/music/son-original-7462480171384900374?refer=embed">♬ son original - NOCTREN</a>
+          </section>
+        </blockquote>
+      </div>
+      <!-- Script TikTok Embed -->
+       <script async src="https://www.tiktok.com/embed.js"></script>
+    </div>
+
+      <!-- Lien vers TikTok -->
+      <div class="tiktok-link">
+        <h3>Rejoins-nous sur TikTok</h3>
+        <a href="https://www.tiktok.com/@noctren7?is_from_webapp=1&sender_device=pc" target="_blank" class="btn">
+          <img src="images/moon_logo_RETOUCHER.jpg" alt="TikTok Icon" />
+          Suis-nous sur TikTok
+        </a>
+      </div>
+    
+</section>
 
     <!-- Pied de page -->
     <footer>
@@ -92,5 +174,6 @@
         <li><a href="#">Politique de confidentialité</a></li>
       </ul>
     </footer>
+    
   </body>
 </html>
